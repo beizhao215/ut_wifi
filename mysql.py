@@ -9,7 +9,7 @@ class Mysql:
 
     def __init__(self):
         try:
-            self.db = MySQLdb.connect('localhost', 'root', 'i986215', 'TESTDB')
+            self.db = MySQLdb.connect('localhost', 'root', '######', 'TESTDB')
             self.cur = self.db.cursor()
         except MySQLdb.Error,e:
              print self.getCurrentTime(), "database connection error reason %d: %s" % (e.args[0], e.args[1])
